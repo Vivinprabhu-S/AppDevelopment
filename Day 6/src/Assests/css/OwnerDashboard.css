@@ -1,0 +1,105 @@
+
+.user-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .box {
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    padding: 20px;
+    width: 110%;
+    margin-left: 10%;
+  }
+  
+  .remainder-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .remainder-table th,
+  .remainder-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .remainder-table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .remainder-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .remainder-table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  @media (max-width: 768px) {
+  
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+      width: 50%;
+    }
+  
+    .remainder-table {
+      font-size: 14px; 
+    }
+    
+    .remainder-table th,
+    .remainder-table td {
+      padding: 8px; 
+    }
+  }
+  
+  
+  .action-boxes {
+    display: flex;
+    flex-direction: column; 
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .action-box-1,
+  .action-box-2 {
+    position: relative;
+    width: 50rem;
+    height: 100px;
+    background-color: #222;
+    color: white;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px auto;
+    max-width: 80%; 
+  }
+  
+  .action-box-1:hover,
+  .action-box-2:hover {
+    background-color: rgb(58, 58, 242);
+  }  

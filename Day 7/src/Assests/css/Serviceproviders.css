@@ -1,0 +1,130 @@
+.full-page-image {
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden; 
+    z-index: -3;
+  }
+  
+  .image-container {
+    position: relative; 
+  }
+  
+  .image-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  }
+  
+  .image-container p {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-20%, -600%); 
+    color: black;
+    font-size: 24px;
+    background-color: rgba(218, 209, 209, 0.7);
+    padding: 10px;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .image-container p:hover { 
+    color: white;
+    background-color: black;
+  }
+
+
+  @media(max-width:719px)
+  {
+    .full-page-image {
+        width: 100vw; 
+        height: 100vh; 
+        overflow: hidden; 
+        z-index: -3;
+      }
+      
+      .image-container {
+        position: relative; 
+      }
+      
+      .image-container img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+      }
+      
+      .image-container p {
+        position: absolute; 
+        top: 25%; 
+        left: 25%; 
+        transform: translate(10%, 0%); 
+        color: black;
+        font-size: 24px;
+        background-color: rgba(218, 209, 209, 0.7);
+        padding: 10px;
+        user-select: none;
+        cursor: pointer;
+      }
+  }
+
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .close-popup {
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .popup-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popup-content label {
+    margin-bottom: 5px;
+  }
+  
+  .popup-content input[type="text"],
+  .popup-content input[type="date"],
+  .popup-content select,
+  .popup-content textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .popup-content button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .popup-content button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
